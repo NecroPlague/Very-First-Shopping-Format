@@ -1,0 +1,205 @@
+@import url(Reset.css);
+
+@font-face {
+    font-family: Vazir Code;
+    src: url('../fonts/Vazir-Code.eot');
+    src: url('../fonts/Vazir-Code.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Code.woff') format('woff'),
+         url('../fonts/Vazir-Code.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: Vazir Code Hack;
+    src: url('../fonts/Vazir-Code-Hack.eot');
+    src: url('../fonts/Vazir-Code-Hack.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Code-Hack.woff') format('woff'),
+         url('../fonts/Vazir-Code-Hack.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+
+body    {
+    font-family: vazir Code;
+    direction: rtl;
+}
+
+.container  {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+
+/* HEADER STYLES */
+
+#header {
+    height: 600px;
+    background: linear-gradient(180deg, rgba(0,20,83,1) 0%, rgba(229,163,255,1) 75%, rgba(229,163,255,0) 100%);
+}
+
+#header #header-section {
+    display: flex;
+}
+
+#header #header-section .titles {
+    align-self: center;
+}
+
+#header #header-section .header-img img{
+    /* background-color: red; */
+    height: 600px;
+    width: 600px;
+}
+
+#header .htitle {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#header .ptitle {
+    color: #3b3b3b;
+    /* font-size: 23px; */
+    padding: 15px 0px 15px 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+#header .btn    {
+    background-color: rgba(255, 114, 29, 1);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: #fff;
+    font-size: 20px;
+    font-family: Vazir Code;
+    margin-top: 20px;
+}
+
+#header .btn:hover  {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* PRODUCTS STYLES */
+
+#products   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#products .product-items    {
+    width: 390px;
+    border: 1px solid #e0e0e0;
+    margin-top: 30px;
+    
+    
+    border-radius: 5px;
+}
+
+#products .product-img  img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    object-fit: scale-down;
+}
+
+#products .product-items .product-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+#products .product-items .product-stock    {
+    padding: 0px 10px 10px 0;
+    font-size: 15px;
+}
+
+#products .product-items .product-data  {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 10px;
+    border-top:1px solid #e0e0e0;
+}
+
+.add-to-cart svg:hover  {
+    cursor: pointer;
+    color: #636363;
+}
+
+/* CART STYLES */
+
+.cart   {
+    background-color: #d8d8d8;
+    width: 320px;
+    height: 400px;
+    position: fixed;
+    left: 25px;
+    bottom: -10px;
+    overflow-y: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.cart-header    {
+    text-align: center;
+    font-size: 18px;
+    background-color: #388e3c;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 5px 0 0 0;
+}
+
+.cart-header:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.cart .total {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    border-top: 1px dashed #3b3b3b;
+    margin-top: 50px;
+    
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.cart-item .p-name:hover    {
+    background-color: #fa6060;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cart-item  .plus   {
+    background-color: green;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.cart-item  .minus   {
+    background-color: red;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.cart .cart-item svg:hover  {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* FOOTER STYLES */
+
+#footer {
+    background-color: #3b3b3b;
+    color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+    margin-top: 25px;
+}
